@@ -167,9 +167,9 @@ class Service(db.Model):
 
         for event in events:
             if event.status.slug != default.slug:
-                stats[event.start.day]["image"] = "icons/fugue/information.png"
+                stats[event.start.day]["image"] = event.status.image
                 stats[event.start.day]["information"] = True
-                stats[event.start.day]["name"] = "information"
+                stats[event.start.day]["name"] = event.status.name
 
         history = stats.values()
         history.sort()
