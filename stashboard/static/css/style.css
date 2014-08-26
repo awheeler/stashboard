@@ -21,7 +21,7 @@ em {
 }
 
 #wrapper {
-  width: 900px; min-height: 100%;
+  width: 950px; min-height: 100%;
   height: auto !important; height: 100%;
   margin: 0 auto -3em;
 }
